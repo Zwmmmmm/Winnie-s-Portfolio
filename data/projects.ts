@@ -1,0 +1,58 @@
+import { Project } from '../types';
+
+export const projects: Project[] = [
+  {
+    id: '1',
+    name: 'Poetic Lens',
+    tagline: 'AI 驱动的图像诗歌生成器，为你的照片写首诗。',
+    coverImage: 'https://picsum.photos/seed/poetic/800/600',
+    promptText: 'Analyze this image and write a short, haiku-style poem that captures its mood and lighting.',
+    githubUrl: 'https://github.com/winnie/poetic-lens',
+    geminiShareUrl: 'https://aistudio.google.com/prompts/example-1',
+  },
+  {
+    id: '2',
+    name: 'Code Whisper',
+    tagline: '将自然语言转化为优雅的 React 组件代码。',
+    coverImage: 'https://picsum.photos/seed/code/800/600',
+    promptText: 'Act as a senior frontend engineer. Convert the following user description into a responsive Tailwind React component.',
+    githubUrl: 'https://github.com/winnie/code-whisper',
+    geminiShareUrl: 'https://aistudio.google.com/prompts/example-2',
+  },
+  {
+    id: '3',
+    name: 'Mind Mapify',
+    tagline: '一键将复杂长文转化为清晰的思维导图结构。',
+    coverImage: 'https://picsum.photos/seed/mindmap/800/600',
+    promptText: 'Summarize the text into a hierarchical markdown list suitable for mind map visualization.',
+    githubUrl: 'https://github.com/winnie/mind-mapify',
+    geminiShareUrl: 'https://aistudio.google.com/prompts/example-3',
+  },
+  {
+    id: '4',
+    name: 'Daily Stoic',
+    tagline: '你的个人斯多葛哲学导师，提供每日反思指引。',
+    coverImage: 'https://picsum.photos/seed/stoic/800/600',
+    promptText: 'You are Marcus Aurelius. Based on my current situation, offer advice from Stoic philosophy.',
+    githubUrl: 'https://github.com/winnie/daily-stoic',
+    geminiShareUrl: 'https://aistudio.google.com/prompts/example-4',
+  },
+  {
+    id: '5',
+    name: 'Color Harmony',
+    tagline: '智能配色方案生成器，专为 UI 设计师打造。',
+    coverImage: 'https://picsum.photos/seed/color/800/600',
+    promptText: 'Generate a color palette of 5 colors based on the emotion "Serenity", including hex codes and usage suggestions.',
+    githubUrl: 'https://github.com/winnie/color-harmony',
+    geminiShareUrl: 'https://aistudio.google.com/prompts/example-5',
+  },
+  {
+    id: '6',
+    name: 'Voice Memo AI',
+    tagline: '语音笔记整理助手，自动提取待办事项与摘要。',
+    coverImage: 'https://picsum.photos/seed/voice/800/600',
+    promptText: 'Transcribe and extract actionable to-do items from this meeting transcript.',
+    githubUrl: 'https://github.com/winnie/voice-memo',
+    geminiShareUrl: 'https://aistudio.google.com/prompts/example-6',
+  },
+];
