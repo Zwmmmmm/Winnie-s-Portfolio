@@ -55,7 +55,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, project, onCopy }) => {
                     <LinkIcon className="text-white w-8 h-8" />
                   </div>
                   <div className="text-center">
-                    <p className="text-sm text-gray-500 mb-2">Gemini Experience Link</p>
+                    <p className="text-sm text-gray-500 mb-2">Project Experience Link</p>
                     <p className="text-xs text-gray-400 break-all px-4 font-mono bg-gray-50 py-2 rounded-lg">
                       {project.geminiShareUrl}
                     </p>

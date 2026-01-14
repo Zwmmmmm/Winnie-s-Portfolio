@@ -61,7 +61,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onCopy, onShowModal 
               className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl bg-gray-900 text-white text-sm font-medium hover:bg-black active:scale-[0.98] shadow-md hover:shadow-lg transition-all duration-200"
             >
               <Share2 size={16} />
-              <span>获取 gemini 项目体验链接</span>
+              <span>获取项目体验链接</span>
             </button>
           </div>
         </div>
