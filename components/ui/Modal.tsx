@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Copy, Link as LinkIcon } from 'lucide-react';
+import { X, Copy, Link as LinkIcon, ExternalLink } from 'lucide-react';
 import { Project } from '../../types';
 
 interface ModalProps {
@@ -67,16 +67,17 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, project, onCopy }) => {
                     onClick={() => {
                       onCopy(project.geminiShareUrl);
                     }}
-                    className="flex-1 py-3.5 bg-gray-900 hover:bg-black text-white rounded-2xl font-medium shadow-lg hover:shadow-xl active:scale-95 transition-all flex items-center justify-center gap-2"
+                    className="flex-1 py-3.5 bg-white border border-gray-200 text-gray-900 rounded-2xl font-medium hover:bg-gray-50 active:scale-95 transition-all flex items-center justify-center gap-2"
                   >
                     <Copy size={18} />
                     复制链接
                   </button>
                   <button
-                    onClick={onClose}
-                    className="flex-1 py-3.5 bg-white border border-gray-200 text-gray-900 rounded-2xl font-medium hover:bg-gray-50 active:scale-95 transition-all"
+                    onClick={() => window.open(project.geminiShareUrl, '_blank')}
+                    className="flex-1 py-3.5 bg-gray-900 hover:bg-black text-white rounded-2xl font-medium shadow-lg hover:shadow-xl active:scale-95 transition-all flex items-center justify-center gap-2"
                   >
-                    关闭
+                    <ExternalLink size={18} />
+                    打开链接
                   </button>
                 </div>
               </div>
