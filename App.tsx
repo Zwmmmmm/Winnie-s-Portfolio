@@ -16,7 +16,7 @@ const App: React.FC = () => {
   // Handle Copy Action
   const handleCopy = useCallback((text: string, label: string) => {
     navigator.clipboard.writeText(text).then(() => {
-      setToast({ show: true, message: 'Copied' }); // iOS style short message
+      setToast({ show: true, message: `${label} Copied` });
       
       // Auto dismiss toast
       setTimeout(() => {
@@ -40,8 +40,6 @@ const App: React.FC = () => {
   // Modal internal copy handler wrapper
   const handleModalCopy = useCallback((text: string) => {
     handleCopy(text, 'Link');
-    // Optional: close modal after copy or keep open? keeping open is usually better UX for "share" modals
-    // But user might want it closed. Let's keep it open to show the toast confirmation clearly over it.
   }, [handleCopy]);
 
   return (

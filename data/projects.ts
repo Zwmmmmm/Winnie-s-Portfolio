@@ -8,7 +8,7 @@ export const projects: Project[] = [
     coverImage: 'https://i.postimg.cc/BnJjF7V3/Group-1.png',
     promptText: '',
     githubUrl: '',
-    geminiShareUrl: 'https://gen-flow-98mb.vercel.app/',
+    geminiShareUrl: 'https://genflow-autorater.netlify.app/',
   },
   {
     id: '2',
